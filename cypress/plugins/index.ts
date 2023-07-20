@@ -1,3 +1,6 @@
+import addContext from 'mochawesome/addContext'
+import {test} from "mocha";
+
 //For Cucumber Integration
 const createEsbuildPlugin =
     require('@badeball/cypress-cucumber-preprocessor/esbuild').createEsbuildPlugin

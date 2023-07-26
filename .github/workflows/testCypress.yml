@@ -8,7 +8,8 @@ jobs:
         uses: actions/checkout@v3
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
+      - name: Cypress Install and run
         uses: cypress-io/github-action@v5
         with:
+          install-command: npm i --frozen-lockfile --silent
           command: npm run cy:spec

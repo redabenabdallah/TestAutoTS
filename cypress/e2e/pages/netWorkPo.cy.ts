@@ -23,5 +23,6 @@ export class NetWorkPo {
 
     checkResponseStatut(statutResponseExpected) {
         cy.get('@maRequete').its('status').should('equal', statutResponseExpected)
+        cy.hello()
     }
 }
